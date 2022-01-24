@@ -1,16 +1,18 @@
-# chuck_norris_joke
+# Chuck Norris Joke App
 
-A new Flutter project.
+A simple app that provides random jokes about Chuck Norris from <link>https://api.chucknorris.io/</link> made in Flutter and Dart.
+<br />  
+### Features:
+<ul>  
+  <li>Favorite Joke</li>
+  <li>Customize Background Color</li>
+  <li>Pull to Refresh New Joke</li>
+  <li>Share joke</li>
+</ul>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Screens:
+This app contains two screens, main screen to show loaded jokes depend on the filter (Random, Favorites, and by Category) and Category Screen to choose a category.
+<br />
+<br />
+![This is an image](screenshot.png)
