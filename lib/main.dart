@@ -1,3 +1,4 @@
+import 'package:chuck_norris_joke/infrastructure/color/color_table.dart';
 import 'package:chuck_norris_joke/infrastructure/joke/joke_table.dart';
 import 'package:chuck_norris_joke/presentation/core/chuck_norris_joke_app.dart';
 
@@ -17,5 +18,6 @@ Future<void> setup() async {
   final directory = await getApplicationDocumentsDirectory();
   Hive.init(directory.path);
   Hive.registerAdapter(JokeTableAdapter());
+  Hive.registerAdapter(ColorTableAdapter());
   di.setup();
 }

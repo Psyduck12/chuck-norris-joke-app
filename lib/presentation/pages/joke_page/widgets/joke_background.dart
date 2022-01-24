@@ -10,9 +10,10 @@ class JokeBackground extends StatelessWidget {
     return BlocBuilder<ColorCubit, ColorState>(
       buildWhen: (previous, current) => previous.color != current.color,
       builder: (context, state) {
-        return Container(
+        return AnimatedContainer(
           height: MediaQuery.of(context).size.height,
           color: state.color,
+          duration: const Duration(milliseconds: 500),
         );
       },
     );

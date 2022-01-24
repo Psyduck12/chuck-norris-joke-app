@@ -9,6 +9,6 @@ class ColorState with _$ColorState {
   }) = _ColorState;
 
   factory ColorState.initial() {
-    return const ColorState(color: ThemeColor.red);
+    return const ColorState(color: Colors.white);
   }
 }

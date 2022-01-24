@@ -45,6 +45,12 @@ class _JokePageState extends State<JokePage> {
   final ColorCubit _colorCubit = getIt<ColorCubit>();
 
   @override
+  void initState() {
+    super.initState();
+    _colorCubit.getColor();
+  }
+
+  @override
   void dispose() {
     _colorCubit.close();
     _jokeCubit.close();
